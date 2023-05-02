@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background: linear-gradient(to bottom, black, teal);
+}
+
+/* For content */
+
+header {
+    min-height: 10vh;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header p {
+    color: #ddd;
+    letter-spacing: 1.3px;
+    margin-top: 0.5em;
+}
+
+main {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+main p {
+    width: 50%;
+    background-color: #33333360;
+    line-height: 1.5rem;
+    letter-spacing: 1.1px;
+    padding: 2rem;
+    margin-right: 1rem;
+}
+
+main img {
+    width: 50%;
+    height: auto;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 5px;
+}
+
+footer {
+    min-height: 10vh;
+    width: 100%;
+    background: linear-gradient(teal, black);
+    padding: 1.5rem;
+    text-align: center;
+    letter-spacing: 1.3px;
+}
+
+/* For responsiveness */
+
+@media screen and (max-width: 400px) {
+    header {
+        padding: 1rem;
+    }
+    header p {
+        letter-spacing: 1px;
+    }
+    main {
+        padding: 1rem;
+        flex-direction: column;
+    }
+    main p {
+        width: 100%;
+        margin-right: 0rem;
+        padding: 1rem;
+    }
+    main img {
+        width: 100%;
+        margin: 1rem;
+    }
+    footer {
+        padding: 1rem;
+        min-height: auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        padding: 1rem;
+    }
+    header p {
+        letter-spacing: 1px;
+    }
+    main {
+        padding: 1rem;
+        flex-direction: column;
+    }
+    main p {
+        width: 100%;
+        margin-right: 0rem;
+        padding: 1rem;
+    }
+    main img {
+        width: 100%;
+        margin: 1rem;
+    }
+    footer {
+        padding: 1rem;
+        min-height: auto;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    header {
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+    header p {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+    main {
+        padding: 1rem;
+        flex-direction: column;
+    }
+    main p {
+        width: 100%;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        margin-right: 0rem;
+        padding: 1rem;
+    }
+    main img {
+        width: 100%;
+        margin: 1rem;
+    }
+    footer {
+        padding: 1rem;
+        min-height: auto;
+    }
+}
